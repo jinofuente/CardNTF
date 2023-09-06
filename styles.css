@@ -1,0 +1,139 @@
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue: hsl(217, 54%, 11%);
+    --Verydarkblue1: hsl(216, 50%, 16%);
+    --Verydarkblue2: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --fontfamily: 'Outfit', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--Verydarkblue);
+    color: var(--White);
+    font-family: var(--fontfamily);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.card{
+    width: 275px;
+    padding: 1.5rem;
+    background-color: var(--Verydarkblue1);
+    border-radius: 1.5rem;
+
+}
+
+.image{
+    position: relative;
+}
+
+.mainImg{
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.image div{
+    position: absolute;
+    top: 0;
+    background-color: var(--Cyan);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 1.5rem;
+}
+
+.image div:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3{
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.description{
+    margin: 0.6rem 0 1rem 0;
+    color: var(--Softblue);
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.price-days{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Softblue);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    color: var(--Cyan);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.price img{
+    margin-right: 5px;
+}
+
+.days{
+    display: flex;
+    align-items: center;
+    color: var(--Softblue);
+    font-size: 14px;
+}
+
+.days img{
+    margin-right: 5px;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--Cyan);
+
+}
+
+.creator img{
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.creator span{
+    margin-left: 5px;
+    color: var(--White);
+}
+
+.mainImg, h3, span{
+    cursor: pointer;
+}
+
+h3:hover, span:hover{
+    color: var(--Cyan);
+}
+
